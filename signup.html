@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>Kids Korner School</title>
+<style>
+body{
+margin-top:-7px;
+margin-left:0px;
+margin-right:0px;
+height:597px;
+border:0.001px solid olive;
+border-radius:10px;
+}
+#image1{
+width:100px;
+height:90px;
+}
+#p1{
+font-size:19px;
+font-family:systen-ui;
+color:#122659;
+font-weight:bold;
+margin-top:-60px;
+margin-left:110px;
+}
+#p2{
+font-size:20px;
+font-family:cursive;
+color:#fc8eac;
+font-weight:bolder;
+margin-top:-20px;
+margin-left:110px;
+}
+#div1{
+height:70px;
+padding:25px;
+background:white;
+position:fixed;
+}
+#table{
+margin-left:430px;
+margin-top:-50px;
+}
+.nav{
+text-decoration:none;
+font-size:20px;
+font-family:cursive;
+font-weight:bolder;
+color:#122649;
+margin-right:38px;
+margin-left:38px;
+}
+.nav:hover{
+background:#ffc85b;
+color:#122649;
+}
+.hr1{
+width:1257px;
+border:2px dotted #fc8eac;
+}
+#division{
+margin-top:120px;
+background:#122649;
+height:486px;
+}
+#form{
+background:white;
+border:3px solid white;
+width:300px;
+height:88%;
+border-radius:20px;
+margin-left:420px;
+padding:30px 30px 10px 90px;
+}
+#namel{
+margin-top:20px;
+font-size:18px;
+font-family:cursive;
+font-weight:bolder;
+color:#ffc85b;
+}
+#name{
+margin-top:13.5px;
+margin-bottom:20px;
+border:1px solid black;
+border-radius:12px;
+font-size:13px;
+font-family:system-ui;
+font-weight:bold;
+color:#grey;
+height:30px;
+width:240px;
+padding:10px;
+}
+#email{
+margin-top:13.5px;
+margin-bottom:20px;
+border:1px solid black;
+border-radius:12px;
+font-size:13px;
+font-family:system-ui;
+font-weight:bold;
+color:#grey;
+height:30px;
+width:244px;
+padding:10px;
+}
+#pwd{
+margin-top:13.5px;
+margin-bottom:20px;
+border:1px solid black;
+border-radius:12px;
+font-size:13px;
+font-family:system-ui;
+font-weight:bold;
+color:#grey;
+height:30px;
+width:244px;
+padding:10px;
+}
+#repwd{
+margin-top:13.5px;
+margin-bottom:20px;
+border:1px solid black;
+border-radius:12px;
+font-size:13px;
+font-family:system-ui;
+font-weight:bold;
+color:#grey;
+height:30px;
+width:244px;
+padding:10px;
+}
+#button1{
+margin-top:10px;
+margin-left:46px;
+width:110px;
+height:40px;
+background:#ffc85b;
+color:white;
+border:1px solid #ffc85b;
+border-radius:28px;
+padding:10px;
+font-size:16px;
+font:weight:bold;
+font-family:cursive;
+}
+#button1:hover{
+background:#0fc0fc;
+color:white;
+}
+</style>
+</head>
+<body>
+<div id="div1">
+<img id="image1"src="https://mobirise.com/extensions/kidsm4/assets/images/animals1.png" alt="logo">
+<p id="p1">Kids</p>
+<p id="p2">Korner</p>
+<div id="table">
+<a href="school website project.html" class="nav">HOME</a>
+<a href="about.html" class="nav">ABOUT</a>
+<a href="gallery.html" class="nav">GALLERY</a>
+<a href="contact us.html" class="nav">CONTACT US</a>
+<a href="Join.html" class="nav">JOIN</a>
+</div>
+<hr class="hr1">
+</div>
+<div id="division">
+<form id="form" name="myform" action="signup.php" method="POST">
+<lable id="namel">Full Name</lable><br>
+     <input name="name" type="text" placeholder="Full Name*" id="name" required>
+<br>
+<lable id="namel">Work Email</lable><br>
+     <input name="workemail" type="email" placeholder="E-Mail Address*" id="email" required>
+<br>
+<lable id="namel">Password</lable><br>
+     <input  name="password" type="password" placeholder="Password*" id="pwd" required>
+<br>
+<lable id="namel">Re Password</lable><br>
+    <input name="repassword" type="password" placeholder="Re-Type Password*" id="repwd" required>
+<br>
+<input type="checkbox" id="checkbox" required>I  agree to the
+Terms & Conditions<br>
+<input type="submit" value="Sign Up" id="button1" onclick="return matchpass()">
+</form>
+<script type="text/javascript">  
+function matchpass(){  
+var firstpassword=document.myform.password.value;  
+var secondpassword=document.myform.repassword.value;   
+var name=document.myform.name.value;
+ if(firstpassword==secondpassword){  
+if(firstpassword.length>=6)
+{
+return true;  
+}  
+else 
+{
+alert("password must be greater than 6 characters");
+return false;
+}
+}
+else if(firstpassword!=secondpassword){  
+alert("password must be same!");  
+return false;  
+}  
+else if(!name.isNaN())
+{
+alert("name must contain only alphabates");
+}
+else
+return true;
+}
+</script>
+</div>
+</body>
+</html>
